@@ -47,8 +47,8 @@ def login():
             user = cur.fetchone()
             if userDetails['password'] == user['password']:
                 session['login'] = True
-                # session['firstName'] = user['first_name']
-                # session['lastName'] = user['last_name']
+                session['username'] = user['username']
+                session['email'] = user['email']
                 flash('Welcome..! You have been successfully logged in', 'success')
                 # return "Welcome to home page"
                 return render_template('home.html')
@@ -96,7 +96,7 @@ def signup():
 # ======================================================================== #
 
 # ======================================================================== #
-# Booking page [under development]
+# Booking page
 @app.route('/Booking/Student-Register', methods=['GET', 'POST'])
 def student_register():
     try:
@@ -121,9 +121,20 @@ def home():
         flash("Please login ",'danger')
         return render_template('404NF.html')
 
-
+# ======================================================================== #
+# Features
+@app.route('/features')
+def feat():
+    return render_template('features.html')
 
 # ======================================================================== #
+
+# ======================================================================== #
+# Rom check
+@app.route('/roomcheck')
+def rooms():
+    return render_template('RoomCheck.html')
+
 
 # ======================================================================== #
 # Session logout
