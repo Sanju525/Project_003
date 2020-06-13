@@ -104,6 +104,8 @@ def student_register():
             if request.method == 'POST':
                 Student_details = request.form
                 # print(Student_details)
+                date = Student_details['JoiningDate']
+                flash('Room had booked succussfully , you must join the hostel within twodays prior the joining data mentioned i.e., '+str(date),'success')
             return render_template('BookingForm.html')
     except:
         return render_template('404NF.html')
