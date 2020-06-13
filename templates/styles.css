@@ -1,0 +1,81 @@
+#Floor{
+    background-color: #2196E3;
+    padding: 10px;
+    text-align: center;
+    background-color:  rgb(220,220,220);
+    border: 1px solid black;
+    margin-top: 1.5rem;
+    border-bottom: 0.5px;
+    margin: 1rem 1rem 0rem 1rem;
+}
+h3{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 12px;
+/*    background-color: #2196E3;*/
+    background-color:  rgb(220,220,220);
+    padding: 10px;
+    grid-row-gap: 20px;
+    border: 1px solid black;
+    margin: 0rem 1rem 1rem 1rem;
+}
+.grid-container-inner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+/*  background-color: #2196F3;*/
+    background-color:  rgb(0, 153, 204);
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 0.5rem;
+}
+.grid-container-inner1 > i {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+/*  background-color: rgba(255, 255, 255, 0.8);*/
+  background-color: white;
+  border: 1px solid darkgreen;
+    border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+    margin-right:0px;
+    margin-bottom: 0.1225rem;
+    padding-top: 3px;
+    padding-bottom: 3px;    
+  width:100%;
+}
+
+@media only screen and (min-width: 200px){
+    h3{
+        font-size: 6px;
+    }
+    .fa{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 4px;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    h3{
+        font-size: 7px;
+    }
+    .fa{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 4px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    h3{
+        font-size: 16px;
+    }
+}
+
